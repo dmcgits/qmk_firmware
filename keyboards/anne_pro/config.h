@@ -30,7 +30,7 @@
 
 /* key matrix size */
 #define MATRIX_ROWS 5
-#define MATRIX_COLS 15
+#define MATRIX_COLS 14
 
 /*
  * Keyboard Matrix Assignments
@@ -43,8 +43,8 @@
  *
 */
 /* Note: These are not used for arm boards. They're here purely as documentation.
- * #define MATRIX_ROW_PINS { PB0, PB1, PB2, PA15, PA10 }
- * #define MATRIX_COL_PINS { PA2, PA3, PA6, PB14, PB15, PA8, PA9, PA7, PB3, PB4, PC14, PC15, PC13, PB5, PB6 }
+ * #define MATRIX_ROW_PINS { PB9, PB8, PB7, PB6, PA0 }
+ * #define MATRIX_COL_PINS { PA5, PA6, PA7, PB0, PB1, PB12, PB13, PB14, PA8, PA9, PA15, PB3, PB4, PB5 }
  * #define UNUSED_PINS
  */
 
