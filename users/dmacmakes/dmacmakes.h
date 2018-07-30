@@ -7,14 +7,15 @@
 #endif
 
 #include "quantum.h"
-#include "config.h"
 #include "process_keycode/process_tap_dance.h"
+// DOCSNOTE tap dance enable was missing from the docs example
 
-// DOCS NOTE This was called xtap in the docs so creating a tap in dmacmakes.c didn't work.
-typedef struct {
-  bool is_press_action;
-  int state;
-} tap;
+
+enum {
+  TD_ESC_GRAVE = 0,
+  T_ENTER_H_SPACE = 1
+};
+
 
 // Possible outcomes for the key
 enum {
@@ -22,12 +23,15 @@ enum {
   SINGLE_HOLD = 2
 };
 
+// DOCS NOTE This was called xtap in the docs so creating a tap in dmacmakes.c didn't work.
+typedef struct {
+  bool is_press_action;
+  int state;
+} tap;
+
+
 // DOCSNOTE they had "ctl_x" which is the reverse of what happends (x on tap ctl on hold)
 // Specific tapdances
-enum {
-  T_ESC_H_GRAVE = 0,
-  T_ENTER_H_SPACE = 1
-};
 
 int cur_dance (qk_tap_dance_state_t *state);
 

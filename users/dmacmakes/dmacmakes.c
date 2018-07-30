@@ -33,6 +33,8 @@
  *
  */
 
+
+
  int cur_dance (qk_tap_dance_state_t *state) {
    if (state->count == 1) {
       if (state->interrupted || !state->pressed) {
@@ -51,6 +53,7 @@
  };
 
  void escGr_finished (qk_tap_dance_state_t *state, void *user_data) {
+   dprintf("escGr_finished");
    escGrTap_state.state = cur_dance(state);
    switch (escGrTap_state.state) {
      case SINGLE_TAP: register_code(KC_ESC); break;
@@ -67,7 +70,7 @@
  }
 
  qk_tap_dance_action_t tap_dance_actions[] = {
-   [T_ESC_H_GRAVE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, escGr_finished, escGr_reset)
+   [TD_ESC_GRAVE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, escGr_finished, escGr_reset)
  };
 
 
