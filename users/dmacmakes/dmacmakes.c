@@ -52,8 +52,12 @@
    .state = 0
  };
 
+  static tap tdEnterSpaceTap_state = {
+   .is_press_action = true,
+   .state = 0
+ };
+
  void escGr_finished (qk_tap_dance_state_t *state, void *user_data) {
-   dprintf("escGr_finished");
    escGrTap_state.state = cur_dance(state);
    switch (escGrTap_state.state) {
      case SINGLE_TAP: register_code(KC_ESC); break;
@@ -69,8 +73,26 @@
    escGrTap_state.state = 0;
  }
 
+  void tdEnterSpace_finished (qk_tap_dance_state_t *state, void *user_data) {
+   
+   tdEnterSpaceTap_state.state = cur_dance(state);
+   switch (tdEnterSpaceTap_state.state) {
+     case SINGLE_TAP: register_code(KC_ENTER); break;
+     case SINGLE_HOLD: register_code(KC_SPACE); break;
+   }
+ }
+
+ void tdEnterSpace_reset (qk_tap_dance_state_t *state, void *user_data) {
+   switch (tdEnterSpaceTap_state.state) {
+     case SINGLE_TAP: unregister_code(KC_ENTER); break;
+     case SINGLE_HOLD: unregister_code(KC_SPACE); break;
+   }
+   tdEnterSpaceTap_state.state = 0;
+ }
+
  qk_tap_dance_action_t tap_dance_actions[] = {
-   [TD_ESC_GRAVE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, escGr_finished, escGr_reset)
+   [TD_ESC_GRAVE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, escGr_finished, escGr_reset),
+   [TD_ENTER_SPACE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, tdEnterSpace_finished, tdEnterSpace_reset)
  };
 
 

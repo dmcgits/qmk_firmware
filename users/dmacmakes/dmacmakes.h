@@ -13,7 +13,8 @@
 
 enum {
   TD_ESC_GRAVE = 0,
-  T_ENTER_H_SPACE = 1
+  TD_ENTER_SPACE = 1,
+  TD_ESC_LAYER1
 };
 
 
@@ -38,3 +39,6 @@ int cur_dance (qk_tap_dance_state_t *state);
 // for the escGr tap dance. put it here so it can be used in any keymap
 void escGr_finished (qk_tap_dance_state_t *state, void *user_data);
 void escGr_reset (qk_tap_dance_state_t *state, void *user_data);
+
+void tdEnterSpace_finished (qk_tap_dance_state_t *state, void *user_data);
+void tdEnterSpace_reset (qk_tap_dance_state_t *state, void *user_data);
