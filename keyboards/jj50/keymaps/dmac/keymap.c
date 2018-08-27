@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_F12,   KC_F1,    KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  \
        KC_ENTER, _______,  KC_PGDN, KC_UP,   KC_PGUP, KC_5,    KC_6,    KC_PGDN, KC_UP,   KC_PGUP, KC_0,    RESET,  \
        KC_CAPSLOCK,  KC_HOME,  KC_LEFT, KC_DOWN, KC_RIGHT, KC_END, KC_HOME, KC_LEFT, KC_DOWN, KC_RIGHT, KC_END, KC_ENT,  \
-       _______, KC_BSPACE, KC_DEL,  RGB_TOG,  RGB_SAD,  RGB_SAI, RGB_HUD, RGB_HUI, _______, _______, KC_QUES, _______,  \
+       _______, KC_BSPACE, KC_DEL,  RGB_TOG,  RGB_VAD,  RGB_VAI, RGB_HUD, RGB_HUI, RGB_SAD, RGB_SAI, KC_QUES, _______,  \
        _______, _______, _______, _______, _______, _______, _______, _______, KC_VOLD, KC_VOLU, _______, _______  \
     ),
 
@@ -110,7 +110,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F12,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,    KC_F7,   KC_F8,   KC_UNDERSCORE,   KC_PLUS,  KC_F11,    \
         KC_ENTER, _______, _______, _______, _______,  _______, _______, _______, _______, _______, _______, RESET,    \
         _______, _______, KC_LBRC, KC_LCBR, KC_LPRN, KC_LABK, KC_RABK,   KC_RPRN, KC_RCBR, KC_RBRC, _______, KC_ENT,     \
-        _______, _______, _______, _______, _______, _______, _______,_______,_______,_______, _______, _______, \
+        _______, _______, _______, BL_OFF, BL_ON, BL_DEC, BL_INC,BL_STEP,RGB_RMOD,RGB_MOD, _______, _______, \
         BL_STEP, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY    \
     ),
     
