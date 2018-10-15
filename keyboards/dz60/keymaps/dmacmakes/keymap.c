@@ -48,14 +48,14 @@ TD(TD_ENTER_SPACE)
   LAYOUT_directional(
       KC_ESC,   KC_F1,  KC_F2,    KC_F3,  KC_F4,    KC_F5,      KC_F6,  KC_F7,    KC_F8,   KC_F9,   KC_F10,   KC_VOLD, KC_VOLU,   KC_SLEP, KC_DEL,
       KC_ENT,   ______, ______,   KC_UP,  ______,   RGB_MOD,    RGB_TOG, KC_PGDN,    KC_UP,  KC_PGUP,   KC_PSCR,   ______,  ______,    RESET,
-      KC_CAPS, KC_HOME, KC_LEFT, KC_DOWN, KC_RIGHT, ______,   KC_HOME, KC_LEFT, KC_DOWN, KC_RIGHT,  KC_END,   ______,   ______,
+      KC_CAPS, KC_HOME, KC_LEFT, KC_DOWN, KC_RIGHT, ______,   KC_HOME, KC_LEFT, KC_DOWN, KC_RIGHT,  KC_END,   KC_END,   ______,
       ______, ______, KC_BSPC, KC_DEL, KC_BSLS, BL_DEC, BL_TOGG, BL_INC, ______, ______, ______, KC_QUESTION, KC_PGUP, KC_INS,
       ______, ______, ______, KC_ENTER, ______, ______, ______, ______, KC_HOME, KC_PGDN, KC_END
       ),
 
   LAYOUT_directional(
-      KC_ESC,   KC_F1,  KC_F2,    KC_F3,  KC_F4,    KC_F5,      KC_F6,  KC_F7,    KC_F8,   KC_F9,   KC_F10,   KC_VOLD, KC_VOLU,   KC_SLEP, KC_DEL,
-      KC_ENT,   ______, ______,   KC_UP,  ______,   RGB_MOD,    RGB_TOG, ______,    KC_UP,  ______,   KC_PSCR,   ______,  ______,    RESET,
+      KC_ESC, LCTL(KC_F5),  KC_F5,  KC_F11,  LSFT(LCTL(KC_F5)), KC_F5,      KC_F6,  KC_F7,    KC_F8,   KC_F9,   KC_F10,   KC_VOLD, KC_VOLU,   KC_SLEP, KC_DEL,
+      KC_ENT,      ______, ______,   KC_UP,  ______,   RGB_MOD,    RGB_TOG, ______,    KC_UP,  ______,   KC_PSCR,   ______,  ______,    RESET,
       KC_CAPS, ______, KC_LBRACKET, KC_LEFT_CURLY_BRACE, KC_LEFT_PAREN, KC_LEFT_ANGLE_BRACKET,   KC_RIGHT_ANGLE_BRACKET, KC_RIGHT_PAREN, KC_RIGHT_CURLY_BRACE, KC_RBRACKET, ______,   ______,   KC_KP_ENTER,
       ______, ______, KC_BSPC, KC_DEL, KC_BSLS, BL_DEC, BL_TOGG, BL_INC, ______, ______, ______, ______, KC_PGUP, KC_INS,
       ______, ______, ______, KC_ENTER, ______, ______, ______, ______, KC_HOME, KC_PGDN, KC_END
