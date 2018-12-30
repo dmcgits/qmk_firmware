@@ -70,6 +70,4 @@ id_rsa_*
 
 #Them LUFA caches tho
 *.cache
-*.*.cache
-*.*.*.cache
-*.*.*.*.cache
+project.razor.json
