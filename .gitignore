@@ -67,3 +67,9 @@ util/Win_Check_Output.txt
 secrets.tar
 id_rsa_*
 /.vs
+
+#Them LUFA caches tho
+*.cache
+*.*.cache
+*.*.*.cache
+*.*.*.*.cache
