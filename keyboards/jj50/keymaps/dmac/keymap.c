@@ -110,7 +110,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F12, LCTL(KC_F5),      KC_F5,     KC_F10,    KC_F4,        KC_F5,        KC_F6,      KC_F7,      KC_F8,   KC_MINUS,      KC_EQUAL,   KC_F11,    \
         KC_ENTER,   _______,    _______,    KC_LBRC,    KC_RBRC,    _______,		BL_ON,      BL_OFF,     BL_DEC,      BL_INC,    KC_PSCREEN, KC_BSLS,    \
         _______,    _______,    _______,    KC_LPRN,    KC_RPRN, 	KC_LABK,		KC_RABK,	KC_LCBR,    KC_RCBR,    KC_LBRC,    KC_RBRC,    KC_ENT,     \
-        _______,    KC_ENTER,   _______,    KC_LCBR,    KC_RCBRm,    RGB_VAD,		RGB_VAI,	RGB_HUD,    RGB_HUI,    RGB_SAD,    RGB_SAI,    RGB_MODE_PLAIN,  \
+        _______,    KC_ENTER,   _______,    KC_LCBR,    KC_RCBR,    RGB_VAD,		RGB_VAI,	RGB_HUD,    RGB_HUI,    RGB_SAD,    RGB_SAI,    RGB_MODE_PLAIN,  \
         BL_STEP,    _______,    _______,    _______,    _______,    _______,      _______,      _______,    KC_MNXT,    KC_VOLD,    KC_VOLU,    KC_MPLY    \
     ),
     
