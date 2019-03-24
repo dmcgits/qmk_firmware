@@ -71,3 +71,4 @@ id_rsa_*
 #Them LUFA caches tho
 *.cache
 project.razor.json
+.vscode/ipch/728fb7380815c23f/KEYMAP.ipch
