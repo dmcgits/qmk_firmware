@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_F12,                KC_F1,          KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_MINUS,   KC_EQUAL,  KC_F11,  \
        KC_ENTER,    KC_SYSTEM_SLEEP,        KC_PGDN, KC_UP,   KC_PGUP, KC_5,    KC_6,    KC_PGUP, KC_UP,   KC_PGDN, KC_PSCREEN,    RESET,  \
        KC_CAPSLOCK,         KC_HOME,        KC_LEFT, KC_DOWN, KC_RIGHT, KC_END, KC_HOME, KC_LEFT, KC_DOWN, KC_RIGHT, KC_END, KC_ENT,  \
-       _______,            KC_ENTER,      KC_BSPACE, KC_DEL,  RGB_TOG,  RGB_VAD,  RGB_VAI, RGB_HUD, KC_MPLY, KC_VOLD, KC_VOLU, KC_QUES,  \
+       _______,            KC_BSPACE,      KC_DEL, KC_ENTER,  RGB_TOG,  RGB_VAD,  RGB_VAI, RGB_HUD, KC_MPLY, KC_VOLD, KC_VOLU, KC_QUES,  \
        _______,             _______,        _______, _______, _______, _______, _______, _______, ______, KC_VOLD, KC_VOLU, _______  \
     ),
 
@@ -110,7 +110,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F12, LCTL(KC_F5),      KC_F5,     KC_F10,    KC_F4,        KC_F5,        KC_F6,      KC_F7,      KC_F8,   KC_MINUS,      KC_EQUAL,   KC_F11,    \
         KC_ENTER,   _______,    _______,    KC_LBRC,    KC_RBRC,    _______,		BL_ON,      BL_OFF,     BL_DEC,      BL_INC,    KC_PSCREEN, KC_BSLS,    \
         _______,    _______,    _______,    KC_LPRN,    KC_RPRN, 	KC_LABK,		KC_RABK,	KC_LCBR,    KC_RCBR,    KC_LBRC,    KC_RBRC,    KC_ENT,     \
-        _______,    KC_ENTER,   _______,    KC_LCBR,    KC_RCBR,    RGB_VAD,		RGB_VAI,	RGB_HUD,    RGB_HUI,    RGB_SAD,    RGB_SAI,    RGB_MODE_PLAIN,  \
+        _______,    _______,   _______,    KC_LCBR,    KC_RCBR,    RGB_VAD,		RGB_VAI,	RGB_HUD,    RGB_HUI,    RGB_SAD,    RGB_SAI,    RGB_MODE_PLAIN,  \
         BL_STEP,    _______,    _______,    _______,    _______,    _______,      _______,      _______,    KC_MNXT,    KC_VOLD,    KC_VOLU,    KC_MPLY    \
     ),
     
