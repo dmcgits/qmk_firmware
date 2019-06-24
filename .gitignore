@@ -71,3 +71,5 @@ id_rsa_*
 #Them LUFA caches tho
 *.cache
 project.razor.json
+keyboards/snagpad/.vscode
+devkitBase
