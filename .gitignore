@@ -1,8 +1,10 @@
+.history/
 .dep
 *.o
 *.bin
 *.eep
 *.elf
+*.hex
 *.qmk
 !util/bootloader.hex
 !quantum/tools/eeprom_reset.hex
@@ -52,6 +54,7 @@ util/Win_Check_Output.txt
 .vscode/tasks.json
 .vscode/last.sql
 .vscode/temp.sql
+.vscode/ipch/
 .stfolder
 .tags
 
@@ -63,29 +66,10 @@ util/Win_Check_Output.txt
 # Do not ignore MiniDox left/right hand eeprom files
 !keyboards/minidox/*.eep
 
-#Them LUFA caches tho
-*.cache
-*.*.cache
-*.*.*.cache
-*.csproj.CoreCompileInputs.cache
-*.csproj.*
-project.razor.json
-.vscode/ipch/728fb7380815c23f/KEYMAP.ipch
-*.ipch
-
 # things travis sees
 secrets.tar
 id_rsa_*
 /.vs
 
-#Them LUFA caches tho
-*.cache
-project.razor.json
-keyboards/snagpad/.vscode
-devkitBase
-
-lib/lufa/Projects/LEDNotifier/LEDMixerApp/obj/Debug/LEDMixer.csproj.CoreCompileInputs.cache
-lib/lufa/Projects/LEDNotifier/CPUUsageApp/obj/Debug/CPUMonitor.csproj.CoreCompileInputs.cache
-lib/lufa/Projects/LEDNotifier/CPUUsageApp/obj/Debug/CPUMonitor.csprojAssemblyReference.cache
-lib/lufa/Projects/TempDataLogger/TempLogHostApp/obj/Debug/TempLoggerHostApp.csproj.CoreCompileInputs.cache
-lib/lufa/Projects/TempDataLogger/TempLogHostApp/obj/Debug/TempLoggerHostApp.csprojAssemblyReference.cache
+# python things
+__pycache__
