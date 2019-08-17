@@ -84,11 +84,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
 	// space area function keys
     [_RAISE] = LAYOUT( \
-       KC_F12,                KC_F1,          KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  \
-       KC_ENTER,    KC_SYSTEM_SLEEP,        KC_LWIN, KC_LCBR,   KC_RCBR, KC_5,    KC_6,    KC_PGUP, KC_UP,   KC_PGDN, KC_PSCREEN,    RESET,  \
-       KC_CAPSLOCK,         KC_HOME,        KC_LEFT, KC_LPRN, KC_RPRN, KC_END, KC_HOME, KC_LEFT, KC_DOWN, KC_RIGHT, KC_END, KC_ENT,  \
-       _______,            KC_BSPACE,      KC_DEL, KC_LBRC,  KC_RBRC,  MDOWN_IMG_MACRO,  RGB_VAI, RGB_HUD, KC_MPLY, KC_VOLD, KC_VOLU, KC_QUES,  \
-       _______,             _______,        _______, _______, _______, _______, _______, _______, ______, KC_VOLD, KC_VOLU, _______  \
+       KC_F12,                KC_F1,     KC_F2,   KC_F3,    KC_F4,    KC_F5,            KC_F6,    KC_F7,    KC_F8,    KC_F9,      KC_F10,       KC_F11, \
+       KC_ENTER,    KC_SYSTEM_SLEEP,   KC_LWIN,   KC_LCBR,  KC_RCBR,  KC_5,             KC_6,     KC_PGUP,  KC_UP,    KC_PGDN,    KC_PSCREEN,   RESET, \
+       KC_CAPSLOCK,         KC_HOME,   KC_LEFT,   KC_LPRN,  KC_RPRN,  KC_END,           KC_HOME,  KC_LEFT,  KC_DOWN,  KC_RIGHT,   KC_END,       KC_ENT, \
+       ______,           KC_BSPACE,    KC_DEL,   KC_LBRC,  KC_RBRC,  MDOWN_IMG_MACRO,  RGB_VAI,  RGB_HUD,  KC_MPLY,  KC_VOLD,    KC_VOLU,      KC_QUES, \
+       ______,             ______,   ______,   ______,  ______,  ______,          ______,  ______,  ______,   KC_VOLD,    KC_VOLU,      ______ \
     ),
 
     /* Lower
@@ -107,10 +107,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	// capsLock/esc coding function key
     [_LOWER] = LAYOUT( \
         KC_F12, LCTL(KC_F5),      KC_F5,     KC_F10,    KC_F11,  KC_F12,        KC_F6,      KC_F7,      KC_F8,   KC_MINUS,      KC_EQUAL,   KC_F11,    \
-        KC_ENTER,  KC_SYSTEM_SLEEP,    _______,     KC_LCBR,    KC_RCBR,    _______,		BL_ON,      BL_OFF,     BL_DEC,      BL_INC,    KC_PSCREEN, KC_BSLS,    \
-        _______,    _______,    _______,   KC_LPRN,    KC_RPRN, 	KC_LABK,		KC_RABK,	KC_LABK,    KC_RABK,    KC_LBRC,    KC_RBRC,    KC_ENT,     \
-        _______,    _______,   _______,    KC_LBRC,    KC_RBRC,    MDOWN_IMG_MACRO,		RGB_VAI,	RGB_HUD,    RGB_HUI,    RGB_SAD,    RGB_SAI,    RGB_MODE_PLAIN,  \
-        BL_STEP,    _______,    _______,    _______,    _______,    _______,      _______,      _______,    KC_MNXT,    KC_VOLD,    KC_VOLU,    KC_MPLY    \
+        KC_ENTER,  KC_SYSTEM_SLEEP,    ______,     KC_LCBR,    KC_RCBR,    ______,		BL_ON,      BL_OFF,     BL_DEC,      BL_INC,    KC_PSCREEN, KC_BSLS,    \
+        ______,    ______,    ______,   KC_LPRN,    KC_RPRN, 	KC_LABK,		KC_RABK,	KC_LABK,    KC_RABK,    KC_LBRC,    KC_RBRC,    KC_ENT,     \
+        ______,    ______,   ______,    KC_LBRC,    KC_RBRC,    MDOWN_IMG_MACRO,		RGB_VAI,	RGB_HUD,    RGB_HUI,    RGB_SAD,    RGB_SAI,    RGB_MODE_PLAIN,  \
+        BL_STEP,    ______,    ______,    ______,    ______,    ______,      ______,      ______,    KC_MNXT,    KC_VOLD,    KC_VOLU,    KC_MPLY    \
     ),
     
     /* Fn
@@ -127,10 +127,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `-----------------------------------------------------------------------------------'
      */
     [_FN] = LAYOUT( \
-       _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-       _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-       _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-       _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-       _______, _______, _______, _______, _______, _______, _______, _______, BL_OFF,  BL_DEC,  BL_INC,  BL_ON    \
+       ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, \
+       ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, \
+       ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, \
+       ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, \
+       ______, ______, ______, ______, ______, ______, ______, ______, BL_OFF,  BL_DEC,  BL_INC,  BL_ON    \
     )
 };
