@@ -74,3 +74,15 @@ id_rsa_*
 # python things
 __pycache__
 keyboards/jj50/.vscode/c_cpp_properties.json
+
+#lufa cache things
+lib/lufa/Projects/LEDNotifier/LEDMixerApp/obj/Debug/LEDMixer.csproj.CoreCompileInputs.cache
+lib/lufa/Projects/LEDNotifier/CPUUsageApp/obj/Debug/CPUMonitor.csproj.CoreCompileInputs.cache
+lib/lufa/Projects/LEDNotifier/CPUUsageApp/obj/Debug/CPUMonitor.csprojAssemblyReference.cache
+lib/lufa/Projects/TempDataLogger/TempLogHostApp/obj/Debug/TempLoggerHostApp.csproj.CoreCompileInputs.cache
+lib/lufa/Projects/TempDataLogger/TempLogHostApp/obj/Debug/TempLoggerHostApp.csprojAssemblyReference.cache
+lib/lufa/Projects/LEDNotifier/LEDMixerApp/obj/Debug/*
+lib/lufa/Projects/LEDNotifier/CPUUsageApp/obj/Debug/*
+*.cache
+folderico-19.ico
+desktop.ini
