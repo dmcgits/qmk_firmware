@@ -61,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * | Ctrl | LGUI | Alt  | Space| Space|_RAISE|    Space    |   -  |   +  |_RAISE| Del  |
      * `-----------------------------------------------------------------------------------'
      */
-    [_DEFLT] = LAYOUT( \
+    [_DEFLT] = LAYOUT( 
         KC_GRAVE,           KC_1,       KC_2,    KC_3,    KC_4,    KC_5,        KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       KC_BSPACE,  \
         KC_TAB,             KC_Q,       KC_W,    KC_E,    KC_R,    KC_T,        KC_Y,       KC_U,       KC_I,       KC_O,       KC_P,       KC_BSLS,    \
         LT(_LOWER, KC_ESC), KC_A,       KC_S,    KC_D,    KC_F,    KC_G,        KC_H,       KC_J,       KC_K,       KC_L,       KC_SCLN,    KC_QUOT,    \
@@ -82,13 +82,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
      * `-----------------------------------------------------------------------------------'
      */
-	// space area function keys
-    [_RAISE] = LAYOUT( \
+	// Right space function layer
+    [_RAISE] = LAYOUT( 		
        KC_F12,                KC_F1,     KC_F2,   KC_F3,    KC_F4,    KC_F5,            KC_F6,    KC_F7,    KC_F8,    KC_F9,      KC_F10,       KC_F11, \
        KC_ENTER,    KC_SYSTEM_SLEEP,   KC_LWIN,   KC_LCBR,  KC_RCBR,  KC_5,             KC_6,     KC_PGUP,  KC_UP,    KC_PGDN,    KC_PSCREEN,   RESET, \
        KC_CAPSLOCK,         KC_HOME,   KC_LEFT,   KC_LPRN,  KC_RPRN,  KC_END,           KC_HOME,  KC_LEFT,  KC_DOWN,  KC_RIGHT,   KC_END,       KC_ENT, \
        ______,           KC_BSPACE,    KC_DEL,   KC_LBRC,  KC_RBRC,  MDOWN_IMG_MACRO,  RGB_VAI,  RGB_HUD,  KC_MPLY,  KC_VOLD,    KC_VOLU,      KC_QUES, \
-       ______,             ______,   ______,   ______,  ______,  ______,          ______,  ______,  ______,   KC_VOLD,    KC_VOLU,      ______ \
+       ______,             ______,   ______,   ______,  LCTL(KC_SPC), LCTL(KC_SPC),  ______,  ______,  ______,   KC_VOLD,    KC_VOLU,      ______ \
     ),
 
     /* Lower
@@ -104,13 +104,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
      * `-----------------------------------------------------------------------------------'
      */
-	// capsLock/esc coding function key
-    [_LOWER] = LAYOUT( \
+	// capsLock/esc function layer
+    [_LOWER] = LAYOUT( 
         KC_F12, LCTL(KC_F5),      KC_F5,     KC_F10,    KC_F11,  KC_F12,        KC_F6,      KC_F7,      KC_F8,   KC_MINUS,      KC_EQUAL,   KC_F11,    \
         KC_ENTER,  KC_SYSTEM_SLEEP,    ______,     KC_LCBR,    KC_RCBR,    ______,		BL_ON,      BL_OFF,     BL_DEC,      BL_INC,    KC_PSCREEN, KC_BSLS,    \
         ______,    ______,    ______,   KC_LPRN,    KC_RPRN, 	KC_LABK,		KC_RABK,	KC_LABK,    KC_RABK,    KC_LBRC,    KC_RBRC,    KC_ENT,     \
         ______,    ______,   ______,    KC_LBRC,    KC_RBRC,    MDOWN_IMG_MACRO,		RGB_VAI,	RGB_HUD,    RGB_HUI,    RGB_SAD,    RGB_SAI,    RGB_MODE_PLAIN,  \
-        BL_STEP,    ______,    ______,    ______,    ______,    ______,      ______,      ______,    KC_MNXT,    KC_VOLD,    KC_VOLU,    KC_MPLY    \
+        BL_STEP,    ______,    ______,    ______,   LCTL(KC_SPC), LCTL(KC_SPC),      ______,      ______,    KC_MNXT,    KC_VOLD,    KC_VOLU,    KC_MPLY    \
     ),
     
     /* Fn
@@ -126,7 +126,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |      |      |      |      |      |      |      |      |BL_OFF|BL_DEC|BL_INC|BL_ON |
      * `-----------------------------------------------------------------------------------'
      */
-    [_FN] = LAYOUT( \
+    [_FN] = LAYOUT( 
        ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, \
        ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, \
        ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, \
