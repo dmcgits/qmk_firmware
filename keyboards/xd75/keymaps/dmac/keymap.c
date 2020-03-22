@@ -43,11 +43,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
   [_BASE] = LAYOUT_ortho_5x15( /* QWERTY */
-    KC_GRAVE,           KC_1,       KC_2,    KC_3,    	KC_4,    KC_5,    KC_BSPC,  		KC_MINUS, 	KC_EQUAL,	KC_6,   KC_7,    KC_8,     	KC_9,     KC_0,     KC_BSPC,
-    KC_TAB,             KC_Q,       KC_W,    KC_E,    	KC_R,    KC_T,    KC_TRNS,  		KC_TRNS,  	KC_TRNS,  		KC_Y,   KC_U,    KC_I,     	KC_O,     KC_P,     KC_BSLASH,
-    LT(_LOWER, KC_ESC), KC_A,       KC_S,    KC_D,    	KC_F,    KC_G,    KC_TRNS,  		KC_TRNS,   	KC_TRNS,  		KC_H,   KC_J,    KC_K,     	KC_L,     KC_SCLN,  KC_QUOTE,
-    KC_LSFT,            KC_Z,       KC_X,    KC_ENTER, 	KC_C,		 KC_V,    KC_B,  				KC_TRNS,  	KC_TRNS,  		KC_B,		KC_N,    KC_M,    	KC_COMM, 	KC_DOT,   MT(MOD_RSFT, KC_SLASH),
-    KC_LCTL,            KC_LCTRL,   KC_LGUI, KC_LALT,		KC_SPC,  KC_SPC,  KC_TRNS,  		KC_TRNS,  	KC_TRNS,  MO(_RAISE), MO(_RAISE),  KC_RCTRL,	KC_MINUS, KC_EQUAL,  KC_DEL
+    KC_GRAVE,           KC_1,       KC_2,    KC_3,    	KC_4,    KC_5,    KC_DOT,  	KC_KP_ENTER,   KC_DOT,		KC_6,   KC_7,    KC_8,     	KC_9,     KC_0,     KC_BSPC,
+    KC_TAB,             KC_Q,       KC_W,    KC_E,    	KC_R,    KC_T,    KC_7,  		KC_8,  			KC_9,  		KC_Y,   KC_U,    KC_I,     	KC_O,     KC_P,     KC_BSLASH,
+    LT(_LOWER, KC_ESC), KC_A,       KC_S,    KC_D,    	KC_F,    KC_G,    KC_4,  		KC_5,   		KC_6,  		KC_H,   KC_J,    KC_K,     	KC_L,     KC_SCLN,  KC_QUOTE,
+    KC_LSFT,            KC_Z,       KC_X,    KC_ENTER, 	KC_C,		 KC_V,    KC_1,  		KC_2,  			KC_3,  		KC_B,		KC_N,    KC_M,    	KC_COMM, 	KC_DOT,   MT(MOD_RSFT, KC_SLASH),
+    KC_LCTL,            KC_LCTRL,   KC_LGUI, KC_LALT,		KC_SPC,  KC_SPC,  KC_0,  		KC_0,	  		KC_DOT,  	MO(_RAISE), MO(_RAISE),  KC_RCTRL,	KC_MINUS, KC_EQUAL,  KC_DEL
   ),
 
 /* FUNCTION
@@ -69,18 +69,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_ENTER,    KC_SYSTEM_SLEEP,       KC_LWIN, 	KC_LCBR,  KC_RCBR, 	KC_5,		 						KC_7,  	KC_8,   	KC_9,   				KC_6,     KC_PGUP,  KC_UP,    KC_PGDN,    KC_PSCREEN,   RESET, \
     KC_CAPSLOCK,         KC_HOME,       KC_LEFT, 	KC_LPRN, 	KC_RPRN, 	KC_END,		 					KC_4,  	KC_5,   	KC_6,   				KC_HOME,  KC_LEFT,  KC_DOWN,  KC_RIGHT,   KC_END,       KC_ENT, \
     KC_TRNS,            KC_BSPACE,      KC_DEL, 	KC_LBRC,  KC_RBRC,  MDOWN_IMG_MACRO, 		KC_1,   KC_2,   	KC_3,   				RGB_VAI,  RGB_HUD,  KC_MPLY,  KC_VOLD,    KC_VOLU,      KC_QUES, \
-    KC_TRNS,             KC_TRNS,       KC_TRNS, KC_TRNS, 	LCTL(KC_SPC), LCTL(KC_SPC), KC_0,  	KC_DOT, 	KC_ENTER, 			KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_VOLD,    KC_VOLU,      KC_TRNS \
+    KC_TRNS,             KC_TRNS,       KC_TRNS, KC_TRNS, 	LCTL(KC_SPC), LCTL(KC_SPC), KC_0,  	KC_DOT, 	KC_ENTER, 			KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_VOLD,    KC_VOLU,      KC_INSERT \
 		),
 
 		[_LOWER] = LAYOUT_ortho_5x15(  // capsescape function
-    KC_F12,          LCTL(KC_F5),       KC_F5,   	KC_F10,   KC_F11,   KC_F12,   					KC_DEL, 	KC_MINUS,	LSFT(KC_EQUAL),KC_F6,    KC_F7,    KC_F8,    KC_F9,      KC_F10,       KC_F11, \
-		KC_ENTER,    KC_SYSTEM_SLEEP,       KC_LWIN, 	KC_LCBR,  KC_RCBR, 	KC_5,		 					  KC_7,  		KC_8,   	KC_9,   				KC_6,     KC_PGUP,  KC_UP,    KC_PGDN,    KC_PSCREEN,   RESET, \
-    KC_CAPSLOCK,         KC_HOME,       KC_LEFT, 	KC_LPRN, 	KC_RPRN, 	KC_END,		 				  KC_4,  		KC_5,   	KC_6,   				KC_HOME,  KC_LEFT,  KC_DOWN,  KC_RIGHT,   KC_END,       KC_ENT, \
-    KC_TRNS,            KC_BSPACE,      KC_DEL, 	KC_LBRC,  KC_RBRC,  MDOWN_IMG_MACRO, 	  KC_1,   	KC_2,   	KC_3,   				RGB_TOG,	RGB_VAI,  RGB_HUD,   KC_VOLD,    KC_VOLU,      KC_QUES, \
-    KC_TRNS,             KC_TRNS,       KC_TRNS,	KC_TRNS,  LCTL(KC_SPC), LCTL(KC_SPC),	KC_0,  		KC_DOT, 	KC_ENTER, 			KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_VOLD,    KC_VOLU,      KC_TRNS \
+    KC_F12,          LCTL(KC_F5),       KC_F5,   	KC_F10,   KC_F11,   KC_F12,   					RGB_TOG, 				RGB_VAD,	RGB_VAI,				KC_F6,    KC_F7,    KC_F8,    KC_F9,      KC_F10,       KC_F11, \
+		KC_ENTER,    KC_SYSTEM_SLEEP,       KC_LWIN, 	KC_LCBR,  KC_RCBR, 	KC_5,		 					  RGB_MOD,  			RGB_HUD, 	RGB_HUI,   				KC_6,     KC_PGUP,  KC_UP,    KC_PGDN,    KC_PSCREEN,   RESET, \
+    KC_CAPSLOCK,         KC_HOME,       KC_LEFT, 	KC_LPRN, 	KC_RPRN, 	KC_END,		 				  KC_4,  					RGB_SAD,  RGB_SAI,   				KC_HOME,  KC_LEFT,  KC_DOWN,  KC_RIGHT,   KC_END,       KC_ENT, \
+    KC_TRNS,            KC_BSPACE,      KC_DEL, 	KC_LBRC,  KC_RBRC,  MDOWN_IMG_MACRO, 	  RGB_MODE_PLAIN,  RGB_RMOD, RGB_MOD,   				RGB_TOG,	RGB_VAI,  RGB_HUD,   KC_VOLD,    KC_VOLU,      KC_QUES, \
+    KC_TRNS,             KC_TRNS,       KC_TRNS,	KC_TRNS,  LCTL(KC_SPC), LCTL(KC_SPC),		KC_0,  					KC_DOT, 	KC_ENTER, 			KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_VOLD,    KC_VOLU,      KC_TRNS \
 		)
 };
-
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
