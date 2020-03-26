@@ -18,3 +18,6 @@ Example of flashing this keyboard:
 See [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) then the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information.
 
 A build guide for this keyboard can be found here: [Nyquist Build Guide](https://docs.keeb.io)
+
+avrdude -V -p atmega32u4 -c avr109 -U flash:w:"/mnt/w/personal/keyboard/qmk_dmac/keebio_nyquist_rev2_default.hex":i -P /dev/ttyS6
+That worked after double-tap on reset + gnd
