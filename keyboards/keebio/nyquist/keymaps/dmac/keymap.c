@@ -77,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_LOWER] = LAYOUT( \
 		KC_F12, LCTL(KC_F5),      KC_F5,     KC_F10,    KC_F11,  KC_F12,        KC_F6,      KC_F7,      KC_F8,   KC_MINUS,      KC_EQUAL,   KC_F11,    \
 		KC_MEDIA_PLAY_PAUSE,  KC_SYSTEM_SLEEP,    ______,     KC_LCBR,    KC_RCBR,    RGB_TOG,  RGB_VAD,     RGB_VAI,      RGB_HUD,    RGB_HUI, RGB_SAD, RGB_SAI,    \
-		______,    ______,    ______,   KC_LPRN,    KC_RPRN, 	KC_LABK,		KC_RABK,	RGB_MODE_PLAIN,    RGB_RMOD,    RGB_MOD,    KC_RBRC,    KC_ENT,     \
+		______,    ______,    ______,   KC_LPRN,    KC_RPRN, 	KC_LABK,		RGB_MODE_PLAIN,	RGB_RMOD,    RGB_MOD,    RGB_MOD,    KC_RBRC,    KC_ENT,     \
 		______,    ______,   ______,    KC_LBRC,    KC_RBRC,    MDOWN_IMG_MACRO,		RGB_VAI,	RGB_SAD,    RGB_SAI,    RGB_RMOD,    RGB_MOD,    RGB_MODE_PLAIN,  \
 		BL_STEP,    ______,    ______,    ______,   LCTL(KC_SPC), LCTL(KC_SPC),      ______,      ______,    KC_MNXT,    KC_VOLD,    KC_VOLU,  KC_INSERT \
 	)
