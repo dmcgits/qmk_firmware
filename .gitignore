@@ -86,3 +86,4 @@ lib/lufa/Projects/LEDNotifier/CPUUsageApp/obj/Debug/*
 *.cache
 folderico-19.ico
 desktop.ini
+qmk.code-workspace
