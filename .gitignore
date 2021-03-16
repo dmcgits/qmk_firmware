@@ -87,3 +87,4 @@ lib/lufa/Projects/LEDNotifier/CPUUsageApp/obj/Debug/*
 folderico-19.ico
 desktop.ini
 qmk.code-workspace
+.vscode/workspace.code-workspace
